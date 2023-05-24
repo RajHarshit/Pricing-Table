@@ -1,0 +1,147 @@
+body{
+    background-color: #212121 ;
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.box {
+    min-width: 19rem;
+    max-width: 20rem;
+    margin-top: 10vh;
+    height: 80vh;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+.header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+#header-basic {
+    background-color: #088395;
+}
+
+#header-standard {
+    background-color: mediumpurple;
+}
+
+#header-premium {
+    background-color: palevioletred;
+}
+
+h1 {
+    margin: 0;;
+}
+
+.pricing { 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.money {
+    align-self: flex-start;
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.sign {
+    font-size: 4rem;
+}
+
+.time-span {
+    font-size: 2rem;
+   font-weight: 500;
+   align-self: flex-end;
+}
+
+li {
+    padding: 10px;
+    list-style: none;
+}
+
+.basic .tick {
+    color: #088395;
+}
+
+.standard .tick {
+    color: mediumpurple;
+}
+
+.premium .tick {
+    color: palevioletred;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+#button-basic {
+    cursor: pointer;
+    color: white;
+    background-color: #088395;
+    border: #088395;
+    border-radius: 10px;
+    padding: 13px;
+    margin-top: 15px;
+    font-size: 1.7rem;
+}
+
+#button-standard {
+    cursor: pointer;
+    color: white;
+    background-color: mediumpurple;
+    border: #9384D1;
+    border-radius: 10px;
+    padding: 13px;
+    margin-top: 15px;
+    font-size: 1.7rem;
+}
+
+#button-premium {
+    cursor: pointer;
+    color: white;
+    background-color: palevioletred;
+    border: #F7D060;
+    border-radius: 10px;
+    padding: 13px;
+    margin-top: 15px;
+    font-size: 1.7rem;
+}
+
+#button-basic:hover {
+    background-color: mediumvioletred;
+}
+
+#button-standard:hover {
+    background-color: mediumvioletred;
+}
+
+#button-premium:hover {
+    background-color: mediumvioletred;
+}
+
+@media (max-width: 680px) {
+    .container {
+        flex-direction: column;
+        gap: 70px;
+        align-items: center;
+    }
+    .box {
+        margin-top: 0;
+        height: 82vh;
+        margin-bottom: 100px;
+    }
+}
